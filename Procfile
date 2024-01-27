@@ -1,1 +1,1 @@
-web: npm run build && vite preview
+web: npm run dev
