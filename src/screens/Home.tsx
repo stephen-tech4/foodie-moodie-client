@@ -12,6 +12,7 @@ const Home = () => {
   const [menu, setMenu] = useState<Menu | undefined>(undefined);
   const menus: Menu[] = data?.menus || null;
 
+  // Set the initial selected menu
   useEffect(() => {
     setMenu(menus?.find((m) => m.label === category));
   }, [menus, category]);
