@@ -1,0 +1,16 @@
+@import-normalize;
+
+.modal-backdrop {
+  @apply fixed top-0 left-0 w-full h-full bg-black/10 flex items-center justify-center backdrop-blur !mt-0;
+}
+
+.modal {
+  width: clamp(70%, 900px, 90%);
+  max-height: 600px;
+  margin: auto;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  overflow: hidden;
+}
